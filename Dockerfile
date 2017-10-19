@@ -8,7 +8,8 @@ RUN apk add --no-cache \
 		py-pip \
 	&& chsh -s /bin/bash
 
-RUN pip install --upgrade awscli
+RUN pip install --upgrade awscli \
+	&& rm -rf ~/.cache/pip
 
 RUN mkdir -p /root/.ssh
 COPY resources/ssh_config /root/.ssh/config
