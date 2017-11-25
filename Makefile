@@ -8,4 +8,4 @@ build:
 	docker build -t $(TAG_NAME) .
 
 shell:
-	docker run --rm -ti $(TAG_NAME) $(ENV) $(SHELL_NAME)
+	docker run --rm -ti $(TAG_NAME) $(SHELL_NAME)
