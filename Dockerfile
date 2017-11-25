@@ -6,6 +6,8 @@ RUN apk add --no-cache \
 		shadow \
 		python \
 		py-pip \
+		groff \
+		less \
 	&& chsh -s /bin/bash
 
 RUN pip install --upgrade awscli \
